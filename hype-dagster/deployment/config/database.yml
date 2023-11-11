@@ -1,0 +1,8 @@
+postgresql:
+  enabled: false
+  postgresqlHost: ${database_host}
+  postgresqlUsername: ${database_user}
+  postgresqlPassword: ${database_password}
+  postgresqlDatabase: ${database_name}
+  service:
+    port: ${database_port}

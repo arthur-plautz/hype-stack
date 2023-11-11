@@ -159,4 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 hype-dagster/tmp*
-hype-dagster/data
+hype-dagster/data/*
+hype-dagster/.states
+
+*.terraform*
