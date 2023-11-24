@@ -1,9 +1,9 @@
 locals {
   dagster_namespace     = "dagster"
-  dagster_database_name = "hype_dagster"
+  dagster_database_name = "dagster"
 
   # Docker image definitions
-  image_name    = "dagster-local"
+  image_name    = "dagster-nlp-example"
   image_version = "0.1"
   image_tag     = "${local.image_name}:${local.image_version}"
 

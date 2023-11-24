@@ -23,10 +23,10 @@ dagster-user-deployments:
 
   # List of unique deployments
   deployments:
-    - name: "hype-dagster"
+    - name: "nlp-example"
       image:
         # When a tag is not supplied, it will default as the Helm chart version.
-        repository: "dagster-local"
+        repository: "dagster-nlp-example"
         tag: "0.1"
 
         # Change with caution! If you're using a fixed tag for pipeline run images, changing the
@@ -49,7 +49,7 @@ dagster-user-deployments:
       # needing to restart the user code deployment pod.
       dagsterApiGrpcArgs:
         - "-m"
-        - "hype_dagster"
+        - "nlp_example"
       port: 3030
 
       # Whether or not to include configuration specified for this user code deployment in the pods

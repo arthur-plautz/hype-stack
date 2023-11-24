@@ -14,7 +14,7 @@ resource "helm_release" "dagster" {
 
   depends_on = [
     kubernetes_namespace.dagster_namespace,
-    docker_image.dagster,
+    docker_image.dagster_nlp_example,
     module.database,
   ]
 }

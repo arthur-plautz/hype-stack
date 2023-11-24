@@ -4,8 +4,8 @@ with open('requirements.txt') as f:
     required = f.readlines()
 
 setup(
-    name="hype_dagster",
-    packages=find_packages(exclude=["hype_dagster_tests"]),
+    name="nlp_example",
+    packages=find_packages(exclude=["nlp_example_tests"]),
     install_requires=required,
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )

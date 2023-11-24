@@ -15,6 +15,7 @@ bash cluster.sh
 ## Initialize Terraform
 
 ```bash
+source config.sh
 terraform init
 ```
 
@@ -43,6 +44,7 @@ kubectl port-forward deployment/dagster-dagster-webserver 3000:80 -n dagster
 ## Destroy Infrastructure
 
 ```bash
+source config.sh
 terraform destroy
 ```
 

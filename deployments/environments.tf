@@ -1,8 +1,8 @@
-resource "docker_image" "dagster" {
-  name = "dagster"
+resource "docker_image" "dagster_nlp_example" {
+  name = local.image_name
 
   build {
-    context = "../"
+    context = "../environments/nlp-example"
     tag     = [local.image_tag]
 
     force_remove = true
